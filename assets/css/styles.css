@@ -1345,8 +1345,10 @@ input, select, textarea {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(280px, 420px));
   gap: 36px;
+  justify-content: center;
+  justify-items: stretch;
 }
 
 .team-card {
@@ -1962,7 +1964,8 @@ input, select, textarea {
     grid-template-columns: 1fr;
   }
   .team-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 420px);
+    justify-content: center;
   }
   .testimonials-grid {
     grid-template-columns: 1fr;
