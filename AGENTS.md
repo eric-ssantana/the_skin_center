@@ -9,9 +9,10 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep the imported site's language dropdown in its existing HTML/CSS/controller structure and call setLanguage for every selection, so all translated sections stay synchronized.
-
-- Keep Blog posts in the typed multilingual catalog and render them through listing and slug routes, so new articles reuse the same layout without duplicating pages.
-- Blog pages reuse the imported header, footer and language controller; language changes emit a browser event to synchronize React article content.
-- Never apply scroll-reveal hiding to cards inside a horizontally scrolling carousel, and keep a fallback that reveals anything still hidden while on screen, because sideways-clipped cards can stay invisible forever and leave a section looking empty.
-- For technology cards keep the full product photo in `image` and put any tighter crop in an optional `cardImage`, so a card can frame the most recognizable part of a machine while the detail popup still shows it complete.
+- The site is ported from the Claude Design project "The Skin Center.dc.html": the home markup lives in `src/site/body.html`, styles in `public/assets/css/site.css`, copy in `public/assets/js/translations.js` (EN/PT/ES) and behaviour in `public/assets/js/site.js`.
+- Switch languages only through the `.lang-btn[data-lang]` pills, which call `setLanguage`; it updates every `data-i18n`, `data-i18n-aria` and `data-i18n-ph` element and emits `tsc:language` so React pages (blog, technology) follow along.
+- Blog and technology pages reuse the home header, footer and booking modal through `SiteShell` (`src/components/site/site-shell.tsx`), which slices `body.html` at the HEADER, HERO and LUXURY FOOTER comment markers, so keep those markers.
+- Technology detail pages are `/technology/$slug`, rendered from `src/data/technologies.ts`; keep the home carousel cards linking to the same slugs.
+- Keep Blog posts in the typed multilingual catalog (`src/data/blog.ts`) and render them through the listing and slug routes.
+- Never apply scroll-reveal hiding to cards inside the horizontally scrolling technology track, and keep the fallback that reveals anything still hidden while on screen.
+- Keep the hero video's pause button and respect prefers-reduced-motion for autoplaying or looping motion.

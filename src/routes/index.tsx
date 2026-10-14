@@ -1,69 +1,34 @@
 import { withBase } from "@/lib/base";
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect } from "react";
 import rawBody from "@/site/body.html?raw";
-const bodyHtml = rawBody.replaceAll('href="/blog"', `href="${withBase("/blog")}"`);
+import { siteLinks, useSiteController } from "@/components/site/site-shell";
 
-const SCRIPTS = [
-  withBase("/assets/js/translations.js"),
-  withBase("/assets/js/technologies-data.js"),
-  withBase("/assets/js/services-data.js"),
-  withBase("/assets/js/inline.js"),
-  withBase("/assets/js/main.js"),
-  withBase("/assets/js/reveal.js?v=3"),
-];
+const bodyHtml = rawBody
+  .replaceAll('href="/blog"', `href="${withBase("/blog")}"`)
+  .replaceAll('href="/technology/', `href="${withBase("/technology/")}`);
 
 const DESC =
-  "Physician-supervised aesthetic medicine and luxury med spa care. Bespoke Botox, fillers, medical radiofrequency, collagen biostimulators, laser and longevity wellness in English, Portuguese, and Spanish.";
+  "The Skin Center — Physician-Led Medical Spa in Davie, FL. Personalized treatments tailored to your unique facial anatomy, body and wellness goals, in English, Portuguese and Spanish.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "TSC - The Skin Center | Advanced Medical Aesthetics & Wellness" },
+      { title: "The Skin Center | Physician-Led Medical Spa in Davie, FL" },
       { name: "description", content: DESC },
-      { property: "og:title", content: "TSC - The Skin Center | Advanced Aesthetics & Medical Spa" },
-      {
-        property: "og:description",
-        content: "Physician-supervised aesthetic medicine and clinical dermatology. Where anatomy meets timeless architectural elegance.",
-      },
+      { property: "og:title", content: "The Skin Center | Physician-Led Medical Spa" },
+      { property: "og:description", content: DESC },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap",
-      },
-      { rel: "stylesheet", href: withBase("/assets/css/styles.css") },
+      ...siteLinks,
+      { rel: "preload", as: "image", href: withBase("/assets/video/hero-poster.jpg") },
     ],
   }),
   component: Index,
 });
 
-function loadScript(src: string) {
-  return new Promise<void>((resolve) => {
-    const s = document.createElement("script");
-    s.src = src;
-    s.async = false;
-    s.setAttribute("data-tsc", "1");
-    s.onload = () => resolve();
-    s.onerror = () => resolve();
-    document.body.appendChild(s);
-  });
-}
-
 function Index() {
-  useEffect(() => {
-    const w = window as unknown as { __tscLoaded?: boolean };
-    if (w.__tscLoaded) return;
-    w.__tscLoaded = true;
-    (async () => {
-      for (const src of SCRIPTS) await loadScript(src);
-      document.dispatchEvent(new Event("DOMContentLoaded"));
-    })();
-  }, []);
-
+  useSiteController();
   return <div suppressHydrationWarning dangerouslySetInnerHTML={{ __html: bodyHtml }} />;
 }

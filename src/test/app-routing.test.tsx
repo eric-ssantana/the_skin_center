@@ -12,6 +12,10 @@ describe("App routing", () => {
     expect(router.matchRoutes("/blog").at(-1)?.routeId).toBe("/blog/");
     expect(router.matchRoutes("/blog/cuidados-diarios-com-a-pele").at(-1)?.routeId).toBe("/blog/$slug");
   });
+  it("matches the technology detail pages", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    expect(router.matchRoutes("/technology/fotona").at(-1)?.routeId).toBe("/technology/$slug");
+  });
   it("matches a page for / instead of falling back to not found", () => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
 

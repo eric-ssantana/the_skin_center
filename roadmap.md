@@ -1,3 +1,5 @@
 - [x] Create a Blog listing and three multilingual article pages inspired by the reference.
-- [x] Replace The Experience in desktop/mobile header navigation with Blog.
-- [x] Verify navigation, language switching, article reading, and preview compilation.
+- [x] Port the Claude Design redesign: video hero, rosé + plum palette, treatments, specialists, real before/after cases, contact and hours (EN/PT/ES).
+- [x] Add six technology detail pages (SP Dynamis, IgniteRF, Lavieen, Triton, Picocare Majesty, Aura 3D).
+- [ ] Replace the sample testimonial ("Sophia R.") with a real patient review.
+- [ ] Connect the booking form to a real inbox or scheduling tool (today it hands off to WhatsApp).
