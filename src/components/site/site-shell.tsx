@@ -14,7 +14,7 @@ const rebase = (html: string) => html
 export const shellHeader = rebase(header).replace('class="site-header"', 'class="site-header is-solid"');
 export const shellFooter = rebase(footer);
 
-export const siteScripts = [withBase('/assets/js/translations.js?v=2'), withBase('/assets/js/site.js?v=1')];
+export const siteScripts = [withBase('/assets/js/translations.js?v=2'), withBase('/assets/js/site.js?v=2')];
 export const siteLinks = [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
   { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' as const },
