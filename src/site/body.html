@@ -1,0 +1,835 @@
+
+
+
+  <!-- ================= MASTER HEADER / NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo-wrap" aria-label="TSC - The Skin Center">
+        <img src="assets/images/logo-icon.png" alt="TSC Icon" class="brand-logo-icon" />
+        <img src="assets/images/logo-full.png" alt="The Skin Center" class="brand-logo-text" />
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active" data-i18n="navHome">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="navAbout">About TSC</a></li>
+          <li><a href="#technologies" class="nav-link" data-i18n="navTech">Technology</a></li>
+          <li><a href="#services" class="nav-link" data-i18n="navServices">Treatments</a></li>
+          <li><a href="/blog" class="nav-link">Blog</a></li>
+          <li><a href="#faq" class="nav-link" data-i18n="navFaq">FAQ</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Trilingual Switcher + Book Button) -->
+      <div class="nav-actions">
+        <!-- Language Selector (EN, PT, ES) -->
+        <div class="lang-selector" aria-label="Language Selector">
+          <button class="lang-trigger" type="button" aria-label="Select language" aria-expanded="false" aria-controls="language-menu-desktop">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg>
+            <span class="lang-current">EN</span>
+          </button>
+          <div class="lang-menu" id="language-menu-desktop" hidden>
+            <button type="button" class="lang-btn active" data-lang="en">English</button>
+            <button type="button" class="lang-btn" data-lang="pt">Português</button>
+            <button type="button" class="lang-btn" data-lang="es">Español</button>
+          </div>
+        </div>
+
+        <button class="btn-primary" data-open-modal="booking-modal">
+          <span data-i18n="bookNow">Book Appointment</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-overlay"></div>
+  <aside class="mobile-drawer">
+    <div>
+      <div style="margin-bottom: 24px;">
+        <img src="assets/images/logo-full.png" alt="TSC Logo" style="height: 36px;" />
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link" data-i18n="navHome">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link" data-i18n="navAbout">About TSC</a></li>
+        <li><a href="#technologies" class="mobile-nav-link" data-i18n="navTech">Technology</a></li>
+        <li><a href="#services" class="mobile-nav-link" data-i18n="navServices">Treatments</a></li>
+        <li><a href="/blog" class="mobile-nav-link">Blog</a></li>
+        <li><a href="#faq" class="mobile-nav-link" data-i18n="navFaq">FAQ</a></li>
+        <li><a href="#contact" class="mobile-nav-link" data-i18n="navContact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-drawer-bottom">
+      <div class="lang-selector lang-selector-mobile" aria-label="Language Selector">
+        <button class="lang-trigger" type="button" aria-label="Select language" aria-expanded="false" aria-controls="language-menu-mobile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg>
+          <span class="lang-current">EN</span>
+        </button>
+        <div class="lang-menu" id="language-menu-mobile" hidden>
+          <button type="button" class="lang-btn active" data-lang="en">English</button>
+          <button type="button" class="lang-btn" data-lang="pt">Português</button>
+          <button type="button" class="lang-btn" data-lang="es">Español</button>
+        </div>
+      </div>
+      <button class="btn-primary" data-open-modal="booking-modal" style="width: 100%;">
+        <span data-i18n="bookNow">Book Appointment</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles"></div>
+    
+    <div class="container hero-grid">
+      <div class="hero-text-col">
+
+        <h1 class="hero-title">
+          <span data-i18n="heroTitlePart1">The Art of Natural</span>
+          <span class="title-bold" data-i18n="heroTitlePart2">Refinement & Skin Science</span>
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          At TSC (The Skin Center), we harmonize clinical dermatology precision with bespoke medical aesthetics. Experience physician-supervised treatments tailored exclusively to your unique facial anatomy and wellness goals.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#services" class="btn-sand">
+            <span data-i18n="heroCtaPrimary">Explore Treatments</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <button class="btn-outline-light" data-open-modal="booking-modal">
+            <span data-i18n="heroCtaSecondary">Schedule Consultation</span>
+          </button>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat-card">
+            <span class="hero-stat-num" data-i18n="heroStat1Number">10,000+</span>
+            <span class="hero-stat-label" data-i18n="heroStat1Label">Procedures Completed</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-num" data-i18n="heroStat2Number">100%</span>
+            <span class="hero-stat-label" data-i18n="heroStat2Label">Physician Supervised</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-num" data-i18n="heroStat3Number">15+</span>
+            <span class="hero-stat-label" data-i18n="heroStat3Label">Years Combined Expertise</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-card">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=85" alt="TSC Aesthetic Clinic Treatment Suite" />
+        </div>
+        <div class="hero-floating-badge">
+          <div class="hero-floating-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="hero-floating-text">
+            <h4 data-i18n="heroCardTitle">Bespoke Anatomy Mapping</h4>
+            <p data-i18n="heroCardSubtitle">Trilingual Medical Care (EN • PT • ES)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about" class="section-pad about-section">
+    <div class="container about-grid">
+      <div class="about-images-col">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80" alt="Clinica Nina inspired luxury interior at TSC" class="about-main-img" />
+        <div class="about-accent-card">
+          <p class="about-quote" data-i18n="aboutQuote">
+            “Elegance is not about being noticed, it's about being remembered with timeless grace.”
+          </p>
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <div>
+          <span class="section-badge" data-i18n="aboutBadge">ABOUT THE SKIN CENTER</span>
+          <h2 class="section-title" data-i18n="aboutTitle">Where Anatomy Meets Architectural Elegance</h2>
+        </div>
+
+        <p class="about-lead" data-i18n="aboutLead">
+          We believe true aesthetics never looks manufactured. It looks rested, timeless, and effortlessly radiant.
+        </p>
+
+        <p class="about-paragraph" data-i18n="aboutParagraph1">
+          Founded on the belief that aesthetic medicine requires equal parts rigorous medical science and artistic mastery, TSC provides physician-supervised treatments in a discreet, sanctuary-like environment inspired by modern architectural serenity.
+        </p>
+
+        <p class="about-paragraph" data-i18n="aboutParagraph2">
+          Every journey begins with comprehensive diagnostic imaging and facial vector analysis. Whether receiving delicate micro-droplet neuromodulators, regenerative biostimulators, or medical-grade radiofrequency, our protocols are designed to preserve your signature expression while turning back the biological clock.
+        </p>
+
+        <div class="about-features-list">
+          <div class="about-feature-item">
+            <div class="about-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div class="about-feature-info">
+              <h4 data-i18n="aboutFeature1Title">Anatomy-First Protocols</h4>
+              <p data-i18n="aboutFeature1Desc">Customized vector mapping ensures balanced, expressive, and natural enhancements without overfilling.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-item">
+            <div class="about-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            </div>
+            <div class="about-feature-info">
+              <h4 data-i18n="aboutFeature2Title">Medical Grade Technology</h4>
+              <p data-i18n="aboutFeature2Desc">FDA-cleared medical radiofrequency, cutting-edge lasers, and pharmaceutical-grade biostimulators.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-item">
+            <div class="about-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="about-feature-info">
+              <h4 data-i18n="aboutFeature3Title">Trilingual Concierge Care</h4>
+              <p data-i18n="aboutFeature3Desc">Seamless patient care delivered fluently in English, Portuguese, and Spanish from consultation to recovery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ================= ADVANCED TECHNOLOGIES SECTION ================= -->
+  <section id="technologies" class="section-pad technologies-section">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="section-badge" data-i18n="techSectionBadge">ADVANCED MEDICAL TECHNOLOGY</span>
+        <h2 class="section-title" data-i18n="techSectionTitle">Advanced aesthetic <em>technologies</em></h2>
+        <p class="section-subtitle" data-i18n="techSectionSubtitle">
+          At TSC, clinical outcomes are powered by world-class, FDA-cleared laser, radiofrequency, and 3D diagnostic platforms supervised by board-certified physicians.
+        </p>
+      </div>
+
+      <!-- Carousel Container with Arrows -->
+      <div class="tech-carousel-container">
+        <button class="tech-nav-arrow tech-arrow-prev" id="tech-prev-btn" aria-label="Previous Technologies">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="tech-carousel-track" id="tech-cards-container">
+          <!-- Dynamically populated via renderTechnologies() -->
+        </div>
+
+        <button class="tech-nav-arrow tech-arrow-next" id="tech-next-btn" aria-label="Next Technologies">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="tech-footer-action">
+        <button class="tech-discover-btn" id="tech-discover-btn" data-i18n="techDiscoverBtn">
+          DISCOVER OUR TECHNOLOGIES
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES & TREATMENTS SECTION ================= -->
+  <section id="services" class="section-pad services-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-badge" data-i18n="servicesBadge">TREATMENT PORTFOLIO</span>
+        <h2 class="section-title" data-i18n="servicesTitle">Comprehensive Medical & Aesthetic Procedures</h2>
+        <p class="section-subtitle" data-i18n="servicesSubtitle">
+          Explore our curated spectrum of clinical dermatology, facial harmonization, body contouring, and regenerative wellness.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="services-tabs-wrapper">
+        <div id="services-tabs-container" class="services-tabs">
+          <!-- Injected dynamically by main.js with i18n support -->
+        </div>
+      </div>
+
+      <!-- Services Grid -->
+      <div id="services-grid-container" class="services-grid">
+        <!-- Rendered dynamically from services-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= THE EXPERIENCE / TECHNOLOGY ================= -->
+  <section id="experience" class="section-pad experience-section">
+    <div class="container">
+      <div class="section-head" style="margin-bottom: 50px;">
+        <span class="section-badge" style="background: rgba(203, 170, 148, 0.2); color: var(--color-nina-sand-light);" data-i18n="techBadge">THE TSC DIFFERENCE</span>
+        <h2 class="section-title" style="color: #fff;" data-i18n="techTitle">An Elevated Standard in Clinical Care</h2>
+        <p class="section-subtitle" style="color: rgba(255, 255, 255, 0.75);" data-i18n="techSubtitle">
+          Inspired by global luxury medical spas, our clinic delivers uncompromising safety, discrete privacy, and transformative outcomes.
+        </p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div class="experience-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 data-i18n="techCard1Title">Physician-Supervised Precision</h4>
+          <p data-i18n="techCard1Desc">Every medical injectable, laser wavelength, and wellness therapy is overseen by licensed medical professionals.</p>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m14 10-4 4"/><path d="m10 10 4 4"/></svg>
+          </div>
+          <h4 data-i18n="techCard2Title">Bespoke Diagnostic Mapping</h4>
+          <p data-i18n="techCard2Desc">High-resolution skin topology, volume loss assessment, and customized multi-stage rejuvenation pathways.</p>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h4 data-i18n="techCard3Title">Premium Global Formulations</h4>
+          <p data-i18n="techCard3Desc">Exclusively utilizing authentic, world-renowned products such as Botox®, Juvederm®, Sculptra®, and Radiesse®.</p>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h4 data-i18n="techCard4Title">Discrete & Private Sanctuary</h4>
+          <p data-i18n="techCard4Desc">Tailored for discerning patients desiring tranquility, privacy, and white-glove personalized care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BEFORE & AFTER / CLINICAL RESULTS ================= -->
+  <section id="results" class="section-pad results-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-badge" data-i18n="resultsBadge">CLINICAL RESULTS</span>
+        <h2 class="section-title" data-i18n="resultsTitle">Subtle Transformations, Dramatic Radiance</h2>
+        <p class="section-subtitle" data-i18n="resultsSubtitle">
+          Real patients, authentic outcomes. Slide to inspect the harmonious refinement achieved through our custom multi-modality protocols.
+        </p>
+      </div>
+
+      <div class="results-grid">
+        <!-- Case 1: Facial Harmonization -->
+        <div class="ba-card">
+          <div class="ba-comparison-wrap">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Before treatment" class="ba-image" />
+            <div class="ba-after-layer">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="After treatment" class="ba-image" />
+            </div>
+            <span class="ba-label after" data-i18n="afterLabel">After</span>
+            <span class="ba-label before" data-i18n="beforeLabel">Before</span>
+            <div class="ba-slider-handle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6"/></svg>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-slider-input" aria-label="Before after comparison slider" />
+          </div>
+          <div class="ba-card-info">
+            <h4 class="ba-card-title" data-i18n="case1Title">Full Face Harmonization: Botox + Dermal Filler Architecture</h4>
+            <p class="ba-card-desc" data-i18n="case1Desc">Restoration of midface volume, jawline contour definition, and softening of dynamic forehead lines while preserving natural facial mobility.</p>
+          </div>
+        </div>
+
+        <!-- Case 2: Skin Texture & Medical RF -->
+        <div class="ba-card">
+          <div class="ba-comparison-wrap">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Before treatment" class="ba-image" />
+            <div class="ba-after-layer">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="After treatment" class="ba-image" />
+            </div>
+            <span class="ba-label after" data-i18n="afterLabel">After</span>
+            <span class="ba-label before" data-i18n="beforeLabel">Before</span>
+            <div class="ba-slider-handle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6"/></svg>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-slider-input" aria-label="Before after comparison slider" />
+          </div>
+          <div class="ba-card-info">
+            <h4 class="ba-card-title" data-i18n="case2Title">Skin Texture & Tone: Medical Radiofrequency & Collagen Stimulation</h4>
+            <p class="ba-card-desc" data-i18n="case2Desc">Correction of photodamage, minimized pore visibility, and profound tightening of the submental and neck contour.</p>
+          </div>
+        </div>
+
+        <!-- Case 3: Lip Architecture -->
+        <div class="ba-card">
+          <div class="ba-comparison-wrap">
+            <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80" alt="Before treatment" class="ba-image" />
+            <div class="ba-after-layer">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="After treatment" class="ba-image" />
+            </div>
+            <span class="ba-label after" data-i18n="afterLabel">After</span>
+            <span class="ba-label before" data-i18n="beforeLabel">Before</span>
+            <div class="ba-slider-handle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6"/></svg>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-slider-input" aria-label="Before after comparison slider" />
+          </div>
+          <div class="ba-card-info">
+            <h4 class="ba-card-title" data-i18n="case3Title">Lip Architecture & Perioral Rejuvenation</h4>
+            <p class="ba-card-desc" data-i18n="case3Desc">Subtle vermilion border enhancement and micro-hydration providing natural plumping without synthetic projection.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="results-disclaimer" data-i18n="resultsDisclaimer">
+        *Individual results may vary. Photos depict actual patient outcomes treated under medical supervision at TSC.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= MEDICAL TEAM SECTION ================= -->
+  <section id="team" class="section-pad team-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-badge" data-i18n="teamBadge">OUR MEDICAL SPECIALISTS</span>
+        <h2 class="section-title" data-i18n="teamTitle">Led by Renowned Aesthetic Authorities</h2>
+        <p class="section-subtitle" data-i18n="teamSubtitle">
+          Our team of board-certified clinicians brings decades of combined expertise in facial anatomy, clinical dermatology, and regenerative medicine.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-card-image">
+            <img src="assets/images/team/marcos.jpg" alt="Dr. Marcos Alcantara" class="team-photo-portrait" />
+          </div>
+          <div class="team-card-body">
+            <h3 class="team-name" data-i18n="team2Name">Dr. Marcos Alcantara, M.D.</h3>
+            <p class="team-role" data-i18n="team2Role">Physician & Wellness Specialist</p>
+            <p class="team-bio" data-i18n="team2Bio">Authority in cellular longevity, orthomolecular protocols, IV micronutrient therapies, and hormonal optimization.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-image">
+            <img src="assets/images/team/cassia.jpg" alt="Valeria Rossi, NP-C" class="team-photo-portrait" />
+          </div>
+          <div class="team-card-body">
+            <h3 class="team-name" data-i18n="team3Name">Valeria Rossi, NP-C</h3>
+            <p class="team-role" data-i18n="team3Role">Master Aesthetic Injector & Laser Specialist</p>
+            <p class="team-bio" data-i18n="team3Bio">Expert in biostimulator collagen induction, advanced medical peels, laser hair removal, and dermal micro-restoration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ================= PATIENT TESTIMONIALS - KOLLEKTIVA STYLE ================= -->
+  <section id="testimonials" class="tsc-kollektiva-section">
+    <div class="kol-bg-layers" aria-hidden="true">
+      <div class="kol-bg kol-bg--active" style="background-image:url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1920&q=90'); background-position: center 52%;" data-kol-bg="0"></div>
+      <div class="kol-bg" style="background-image:url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1920&q=90'); background-position: center 30%;" data-kol-bg="1"></div>
+      <div class="kol-bg" style="background-image:url('https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=1920&q=90'); background-position: center 38%;" data-kol-bg="2"></div>
+      <div class="kol-bg" style="background-image:url('https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=1920&q=90'); background-position: center 55%;" data-kol-bg="3"></div>
+      <div class="kol-bg" style="background-image:url('https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1920&q=90'); background-position: center 25%;" data-kol-bg="4"></div>
+      <div class="kol-bg" style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1920&q=90'); background-position: center 32%;" data-kol-bg="5"></div>
+      <div class="kol-bg" style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1920&q=90'); background-position: center 28%;" data-kol-bg="6"></div>
+      <div class="kol-bg" style="background-image:url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=1920&q=90'); background-position: center center;" data-kol-bg="7"></div>
+    </div>
+    <div class="kol-vignette" aria-hidden="true"></div>
+    <div class="kol-content">
+      <div class="kol-top">
+        <div class="kol-top-left">
+          <span class="kol-eyebrow" data-i18n="testimonialsBadge">PATIENT EXPERIENCES</span>
+          <h2 class="kol-headline" data-i18n="testimonialsTitle">Trusted by<br>Discerning<br>Clients</h2>
+        </div>
+        <div class="kol-top-right">
+          <div class="kol-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="kol-quote" id="kol-quote">&ldquo;TSC redefined my understanding of aesthetic medicine. Dr. Camila&rsquo;s light touch with Botox and subtle fillers took 8 years off my face without anyone realizing I had work done. Pure perfection.&rdquo;</p>
+        </div>
+      </div>
+      <div class="kol-bottom">
+        <div class="kol-avatars" role="list">
+          <button class="kol-avatar-btn active" data-kol-idx="0" aria-label="Show Sophia R."><span class="kol-dot"></span><span class="kol-avatar-ring"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=120&q=85" alt="Sophia R."/></span></button>
+          <button class="kol-avatar-btn" data-kol-idx="1" aria-label="Show Matheus C."><span class="kol-dot"></span><span class="kol-avatar-ring"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=85" alt="Matheus C."/></span></button>
+          <button class="kol-avatar-btn" data-kol-idx="2" aria-label="Show Valentina G."><span class="kol-dot"></span><span class="kol-avatar-ring"><img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=120&q=85" alt="Valentina G."/></span></button>
+          <button class="kol-avatar-btn" data-kol-idx="3" aria-label="Show Isabella M."><span class="kol-dot"></span><span class="kol-avatar-ring"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&q=85" alt="Isabella M."/></span></button>
+          <button class="kol-avatar-btn" data-kol-idx="4" aria-label="Show Rafael A."><span class="kol-dot"></span><span class="kol-avatar-ring"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=120&q=85" alt="Rafael A."/></span></button>
+          <button class="kol-avatar-btn" data-kol-idx="5" aria-label="Show Camille D."><span class="kol-dot"></span><span class="kol-avatar-ring"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=85" alt="Camille D."/></span></button>
+          <button class="kol-avatar-btn" data-kol-idx="6" aria-label="Show James T."><span class="kol-dot"></span><span class="kol-avatar-ring"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=85" alt="James T."/></span></button>
+          <button class="kol-avatar-btn" data-kol-idx="7" aria-label="Show Elena V."><span class="kol-dot"></span><span class="kol-avatar-ring"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=85" alt="Elena V."/></span></button>
+        </div>
+        <div class="kol-footer">
+          <span class="kol-footer-name" id="kol-name">Sophia R.</span>
+          <span class="kol-footer-sep" aria-hidden="true">|</span>
+          <span class="kol-footer-location" id="kol-location">Miami, FL</span>
+          <span class="kol-footer-tenure" id="kol-tenure" data-i18n="kolTenure">Client since 2022</span>
+          <a href="https://wa.me/13055558720" target="_blank" rel="noopener noreferrer" class="kol-footer-cta" data-i18n="kolWhatsApp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- ================= FAQ SECTION ================= -->
+  <section id="faq" class="section-pad faq-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-badge" data-i18n="faqBadge">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 class="section-title" data-i18n="faqTitle">Everything You Need to Know</h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span data-i18n="faqQ1">How do I know which treatment is right for me?</span>
+            <span class="faq-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faqA1">
+              Every journey begins with an in-depth 45-minute consultation. We evaluate your facial proportions, skin tone, laxity, medical history, and lifestyle before designing a customized treatment roadmap.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span data-i18n="faqQ2">What is the difference between Botox and Dermal Fillers?</span>
+            <span class="faq-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faqA2">
+              Botox (neuromodulators) relaxes the hyperactive facial muscles responsible for dynamic expression wrinkles like frown lines and crow's feet. Dermal Fillers (hyaluronic acid) restore lost structural volume, define contours like the jawline and cheeks, and hydrate lips.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span data-i18n="faqQ3">Is there downtime after Medical Radiofrequency or Laser treatments?</span>
+            <span class="faq-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faqA3">
+              Downtime is minimal. Most patients experience mild redness or warmth for 24 to 48 hours, easily managed with our proprietary post-care soothing serum. You can return to daily activities almost immediately.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn" type="button">
+            <span data-i18n="faqQ4">Are consultations conducted in English, Portuguese, or Spanish?</span>
+            <span class="faq-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faqA4">
+              Yes! Our entire medical and concierge team is fully trilingual. You may conduct your consultation, medical assessment, and follow-up in whichever language you feel most comfortable.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BESPOKE CONSULTATION CTA ================= -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-card">
+        <span class="section-badge" data-i18n="ctaBadge">BESPOKE CONSULTATION</span>
+        <h2 data-i18n="ctaTitle">Begin Your Aesthetic Transformation Today</h2>
+        <p data-i18n="ctaSubtitle">
+          Experience the synergy of medical expertise and refined artistry. Book your private appointment or connect directly with our patient concierge.
+        </p>
+        <div class="cta-banner-actions">
+          <button class="btn-sand" data-open-modal="booking-modal">
+            <span data-i18n="ctaBookBtn">Schedule Your Appointment</span>
+          </button>
+          <a href="https://wa.me/13055558720" target="_blank" rel="noopener noreferrer" class="btn-outline-light">
+            <span data-i18n="ctaWhatsappBtn">Chat via WhatsApp Concierge</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & LOCATION ================= -->
+  <section id="contact" class="section-pad contact-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-badge" data-i18n="contactBadge">VISIT OUR CLINIC</span>
+        <h2 class="section-title" data-i18n="contactTitle">Location & Operating Hours</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-label" data-i18n="contactAddressLabel">Address</h4>
+                <p class="contact-val" data-i18n="contactAddressValue">Aesthetic Boulevard & Wellness Ave, Luxury Suite 400 — Serving Miami, Aventura & International Clients</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-label" data-i18n="contactHoursLabel">Opening Hours</h4>
+                <p class="contact-val" data-i18n="contactHoursValue">Monday – Saturday: 9:00 AM – 7:30 PM | Sunday: By Private Appointment</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-label" data-i18n="contactPhoneLabel">Direct Concierge</h4>
+                <p class="contact-val" data-i18n="contactPhoneValue">+1 (305) 555-8720</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-label" data-i18n="contactEmailLabel">Email Inquiries</h4>
+                <p class="contact-val" data-i18n="contactEmailValue">concierge@theskincenter.com</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-label" data-i18n="contactInstagramLabel">Follow on Instagram</h4>
+                <p class="contact-val"><a href="https://www.instagram.com/cassiacardoso_us/" target="_blank" rel="noopener noreferrer" data-i18n="contactInstagramValue">@cassiacardoso_us</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 28px;">
+            <button class="btn-primary" data-open-modal="booking-modal" style="width: 100%;">
+              <span data-i18n="ctaBookBtn">Schedule Your Appointment</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="contact-map-card">
+          <!-- Interactive Map Container -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14352.92348589073!2d-80.14815457008709!3d25.95781198517769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9accbbf17c4f1%3A0x6b77d61c6b8bfd32!2sAventura%2C%20FL%2033180!5e0!3m2!1sen!2sus!4v1714000000000!5m2!1sen!2sus"
+            title="TSC Clinic Location"
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LUXURY FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/images/logo-full.png" alt="TSC - The Skin Center" class="footer-logo" />
+          <p class="footer-tagline" data-i18n="footerTagline">
+            The Skin Center — High-Precision Dermatology, Facial Harmonization & Regenerative Wellness.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footerNavTitle">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about" data-i18n="navAbout">About TSC</a></li>
+            <li><a href="#services" data-i18n="navServices">Treatments</a></li>
+            <li><a href="#experience" data-i18n="navExperience">The Experience</a></li>
+            <li><a href="#results" data-i18n="navResults">Before & After</a></li>
+            <li><a href="#team" data-i18n="navTeam">Medical Team</a></li>
+            <li><a href="#faq" data-i18n="navFaq">FAQ</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footerServicesTitle">Treatments</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" onclick="activeCategory='rostro'; renderCategoryTabs(); renderServices();" data-i18n="serviceCategoryRostro">Face & Skin</a></li>
+            <li><a href="#services" onclick="activeCategory='medicina'; renderCategoryTabs(); renderServices();" data-i18n="serviceCategoryMedicina">Medical Aesthetics</a></li>
+            <li><a href="#services" onclick="activeCategory='bienestar'; renderCategoryTabs(); renderServices();" data-i18n="serviceCategoryBienestar">Longevity & Wellness</a></li>
+            <li><a href="#services" onclick="activeCategory='cuerpo'; renderCategoryTabs(); renderServices();" data-i18n="serviceCategoryCuerpo">Body Sculpting</a></li>
+            <li><a href="#services" onclick="activeCategory='depilacion'; renderCategoryTabs(); renderServices();" data-i18n="serviceCategoryDepilacion">Laser & Waxing</a></li>
+            <li><a href="#services" onclick="activeCategory='remociones'; renderCategoryTabs(); renderServices();" data-i18n="serviceCategoryRemociones">Removal Protocols</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footerCopyright">© 2026 TSC (The Skin Center). All rights reserved. Physician-supervised medical aesthetics.</p>
+        <p data-i18n="footerDisclaimer">Disclaimer: Aesthetic procedures are medical treatments performed under physician supervision. Individual results vary based on anatomical characteristics and lifestyle factors.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================= APPOINTMENT BOOKING MODAL ================= -->
+  <div id="booking-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div style="text-align: center; margin-bottom: 20px;">
+        <span class="section-badge" data-i18n="ctaBadge">BESPOKE CONSULTATION</span>
+        <h3 style="font-size: 1.5rem; color: var(--color-nina-dark-espresso); font-weight: 700;" data-i18n="modalBookingTitle">Schedule a Consultation at TSC</h3>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px;" data-i18n="modalBookingSubtitle">Please fill in your details and preferred treatment. Our concierge will contact you within 2 hours to confirm your appointment time.</p>
+      </div>
+
+      <form id="tsc-booking-form" class="booking-form">
+        <div class="form-group">
+          <label for="form-name" class="form-label" data-i18n="formName">Full Name</label>
+          <input type="text" id="form-name" class="form-input" required placeholder="e.g. Eleanor Vance" />
+        </div>
+
+        <div class="form-group">
+          <label for="form-email" class="form-label" data-i18n="formEmail">Email Address</label>
+          <input type="email" id="form-email" class="form-input" required placeholder="name@domain.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="form-phone" class="form-label" data-i18n="formPhone">Phone / WhatsApp</label>
+          <input type="tel" id="form-phone" class="form-input" required placeholder="+1 (305) 000-0000" />
+        </div>
+
+        <div class="form-group">
+          <label for="booking-service-select" class="form-label" data-i18n="formService">Treatment of Interest</label>
+          <select id="booking-service-select" class="form-select" required>
+            <!-- Populated dynamically by main.js -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="form-date" class="form-label" data-i18n="formDate">Preferred Date</label>
+          <input type="date" id="form-date" class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="form-notes" class="form-label" data-i18n="formNotes">Notes or specific concerns (optional)</label>
+          <textarea id="form-notes" rows="3" class="form-textarea" placeholder="Tell us about your aesthetic goals..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">
+          <span data-i18n="formSubmit">Confirm Booking Request</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= SERVICE DETAIL MODAL ================= -->
+  <div id="service-detail-modal" class="modal-overlay">
+    <div class="modal-card" style="max-width: 720px;">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div style="height: 260px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 24px;">
+        <img id="modal-service-img" src="" alt="Treatment Image" style="width: 100%; height: 100%; object-fit: cover;" />
+      </div>
+      <div>
+        <span id="modal-service-category" class="section-badge" style="margin-bottom: 10px;"></span>
+        <h3 id="modal-service-title" style="font-size: 1.6rem; color: var(--color-nina-dark-espresso); font-weight: 700; margin-bottom: 14px;"></h3>
+        <p id="modal-service-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;"></p>
+
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; background: var(--bg-surface); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--accent-border); margin-bottom: 24px;">
+          <div>
+            <strong style="font-size: 0.76rem; text-transform: uppercase; color: var(--color-nina-bronze); display: block;" data-i18n="serviceDuration">Duration:</strong>
+            <span id="modal-service-duration" style="font-size: 0.9rem; font-weight: 600; color: var(--color-nina-dark-espresso);"></span>
+          </div>
+          <div>
+            <strong style="font-size: 0.76rem; text-transform: uppercase; color: var(--color-nina-bronze); display: block;" data-i18n="serviceDowntime">Downtime:</strong>
+            <span id="modal-service-downtime" style="font-size: 0.9rem; font-weight: 600; color: var(--color-nina-dark-espresso);"></span>
+          </div>
+          <div style="grid-column: span 2;">
+            <strong style="font-size: 0.76rem; text-transform: uppercase; color: var(--color-nina-bronze); display: block;" data-i18n="serviceSession">Recommended:</strong>
+            <span id="modal-service-sessions" style="font-size: 0.88rem; color: var(--text-secondary);"></span>
+          </div>
+          <div style="grid-column: span 2;">
+            <strong style="font-size: 0.76rem; text-transform: uppercase; color: var(--color-nina-bronze); display: block;" data-i18n="serviceResults">Ideal For:</strong>
+            <span id="modal-service-ideal" style="font-size: 0.88rem; color: var(--text-secondary);"></span>
+          </div>
+        </div>
+
+        <button id="modal-service-book-btn" class="btn-primary" data-i18n="bookThisService" style="width: 100%;">
+          Book This Treatment
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- ================= TECHNOLOGY DETAIL MODAL ================= -->
+  <div id="tech-detail-modal" class="modal-overlay">
+    <div class="modal-card tech-modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="tech-modal-media">
+        <img id="modal-tech-img" src="" alt="Device Image" />
+        <span id="modal-tech-cat" class="tech-card-category" style="position: absolute; top: 16px; left: 16px; background: rgba(34, 29, 27, 0.85); padding: 4px 10px; border-radius: 9999px;"></span>
+      </div>
+      <div class="tech-modal-content">
+        <span id="modal-tech-manufacturer" class="section-badge" style="margin-bottom: 8px;"></span>
+        <h3 id="modal-tech-name" style="font-size: 1.6rem; color: var(--color-nina-dark-espresso); font-weight: 700; margin-bottom: 12px;"></h3>
+        <p id="modal-tech-desc" style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 22px;"></p>
+
+        <div class="tech-modal-specs">
+          <div>
+            <strong style="font-size: 0.74rem; text-transform: uppercase; color: var(--color-nina-bronze); display: block;" data-i18n="techModalWavelengths">Wavelengths / Energy:</strong>
+            <span id="modal-tech-wavelengths" style="font-size: 0.88rem; font-weight: 600; color: var(--color-nina-dark-espresso);"></span>
+          </div>
+          <div>
+            <strong style="font-size: 0.74rem; text-transform: uppercase; color: var(--color-nina-bronze); display: block;" data-i18n="techModalDepth">Treatment Depths:</strong>
+            <span id="modal-tech-depth" style="font-size: 0.88rem; font-weight: 600; color: var(--color-nina-dark-espresso);"></span>
+          </div>
+          <div style="grid-column: span 2;">
+            <strong style="font-size: 0.74rem; text-transform: uppercase; color: var(--color-nina-bronze); display: block;" data-i18n="techModalIndications">Key Clinical Indications:</strong>
+            <span id="modal-tech-indications" style="font-size: 0.86rem; color: var(--text-secondary);"></span>
+          </div>
+          <div style="grid-column: span 2;">
+            <strong style="font-size: 0.74rem; text-transform: uppercase; color: var(--color-nina-bronze); display: block;" data-i18n="techModalTreatments">Signature Procedures:</strong>
+            <span id="modal-tech-treatments" style="font-size: 0.86rem; color: var(--text-secondary); font-weight: 600;"></span>
+          </div>
+        </div>
+
+        <button id="modal-tech-book-btn" class="btn-primary" style="width: 100%; margin-top: 20px;">
+          <span data-i18n="techModalBook">Book Treatment with this Technology</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  
+  
+  
+  
