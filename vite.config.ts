@@ -16,7 +16,7 @@ export default defineConfig(
           spa: { enabled: true },
           prerender: { enabled: true, crawlLinks: true },
         },
-        nitro: { preset: "static" },
+        nitro: false,
         vite: { base: process.env.BASE_PATH ?? "/" },
       }
     : {
