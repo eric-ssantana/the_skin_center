@@ -1,5 +1,6 @@
+import { withBase } from '@/lib/base';
 import { useEffect } from 'react';
-const scripts = ['/assets/js/translations.js', '/assets/js/technologies-data.js', '/assets/js/services-data.js', '/assets/js/inline.js', '/assets/js/main.js', '/assets/js/reveal.js?v=3'];
+const scripts = [withBase('/assets/js/translations.js'), withBase('/assets/js/technologies-data.js'), withBase('/assets/js/services-data.js'), withBase('/assets/js/inline.js'), withBase('/assets/js/main.js'), withBase('/assets/js/reveal.js?v=3')];
 export function useSiteController() {
   useEffect(() => {
     const w = window as unknown as { __tscLoaded?: boolean };

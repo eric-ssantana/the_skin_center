@@ -1,14 +1,16 @@
+import { withBase } from "@/lib/base";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import bodyHtml from "@/site/body.html?raw";
+import rawBody from "@/site/body.html?raw";
+const bodyHtml = rawBody.replaceAll('href="/blog"', `href="${withBase("/blog")}"`);
 
 const SCRIPTS = [
-  "/assets/js/translations.js",
-  "/assets/js/technologies-data.js",
-  "/assets/js/services-data.js",
-  "/assets/js/inline.js",
-  "/assets/js/main.js",
-  "/assets/js/reveal.js?v=3",
+  withBase("/assets/js/translations.js"),
+  withBase("/assets/js/technologies-data.js"),
+  withBase("/assets/js/services-data.js"),
+  withBase("/assets/js/inline.js"),
+  withBase("/assets/js/main.js"),
+  withBase("/assets/js/reveal.js?v=3"),
 ];
 
 const DESC =
@@ -34,7 +36,7 @@ export const Route = createFileRoute("/")({
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap",
       },
-      { rel: "stylesheet", href: "/assets/css/styles.css" },
+      { rel: "stylesheet", href: withBase("/assets/css/styles.css") },
     ],
   }),
   component: Index,
