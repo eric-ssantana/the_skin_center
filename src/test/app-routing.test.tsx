@@ -14,7 +14,7 @@ describe("App routing", () => {
   });
   it("matches the technology detail pages", () => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
-    expect(router.matchRoutes("/technology/fotona").at(-1)?.routeId).toBe("/technology/$slug");
+    expect(router.matchRoutes("/technology/igniterf").at(-1)?.routeId).toBe("/technology/$slug");
   });
   it("matches a page for / instead of falling back to not found", () => {
     const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });

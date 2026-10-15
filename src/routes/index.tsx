@@ -8,12 +8,12 @@ const bodyHtml = rawBody
   .replaceAll('href="/technology/', `href="${withBase("/technology/")}`);
 
 const DESC =
-  "The Skin Center — Physician-Led Medical Spa in Davie, FL. Personalized treatments tailored to your unique facial anatomy, body and wellness goals, in English, Portuguese and Spanish.";
+  "The Skin Center — Physician-Led Medical Spa in Pembroke Pines, FL. Personalized treatments tailored to your unique facial anatomy, body and wellness goals, in English, Portuguese and Spanish.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "The Skin Center | Physician-Led Medical Spa in Davie, FL" },
+      { title: "The Skin Center | Physician-Led Medical Spa in Pembroke Pines, FL" },
       { name: "description", content: DESC },
       { property: "og:title", content: "The Skin Center | Physician-Led Medical Spa" },
       { property: "og:description", content: DESC },

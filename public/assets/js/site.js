@@ -182,36 +182,22 @@
     else try { sessionStorage.setItem("tsc_cat", String(i)); } catch (err) {}
   });
 
-  /* ---------------- Before / after ---------------- */
-  var currentCase = 1;
-  function setPos(v) {
-    var ba = $(".ba"); if (!ba) return;
-    var r = $(".ba-range", ba); if (r) r.value = v;
-    ba.style.setProperty("--pos", v + "%");
-  }
+  /* ---------------- Before / after (one slider per case) ---------------- */
   function syncDynamic() {
-    var before = $(".ba-before"), after = $(".ba-after");
     var w = cap(tr("caseWord", "CASE"));
-    if (before) before.alt = cap(tr("before", "Before")) + " — " + w + " " + currentCase;
-    if (after) after.alt = cap(tr("after", "After")) + " — " + w + " " + currentCase;
-    $$(".ba-thumb").forEach(function (b) { b.setAttribute("aria-label", w + " " + b.getAttribute("data-case")); });
+    $$(".ba").forEach(function (ba, i) {
+      var n = i + 1, before = $(".ba-before", ba), after = $(".ba-after", ba), range = $(".ba-range", ba);
+      if (before) before.alt = cap(tr("before", "Before")) + " — " + w + " " + n;
+      if (after) after.alt = cap(tr("after", "After")) + " — " + w + " " + n;
+      if (range) range.setAttribute("aria-label", tr("sliderLabel", "Before and after comparison") + " — " + w + " " + n);
+    });
     labelVideo();
   }
   document.addEventListener("input", function (e) {
-    if (e.target && e.target.classList && e.target.classList.contains("ba-range")) setPos(e.target.value);
-  });
-  on("click", ".ba-thumb", function (e, b) {
-    currentCase = Number(b.getAttribute("data-case"));
-    $$(".ba-thumb").forEach(function (o) {
-      var active = o === b;
-      o.classList.toggle("is-active", active);
-      o.setAttribute("aria-pressed", String(active));
-    });
-    var before = $(".ba-before"), after = $(".ba-after"), num = $(".ba-num");
-    if (before) before.src = "assets/images/results/case" + currentCase + "-before.jpg";
-    if (after) after.src = "assets/images/results/case" + currentCase + "-after.jpg";
-    if (num) num.textContent = (currentCase < 10 ? "0" : "") + currentCase;
-    setPos(50); syncDynamic();
+    var r = e.target;
+    if (!r || !r.classList || !r.classList.contains("ba-range")) return;
+    var ba = r.closest(".ba");
+    if (ba) ba.style.setProperty("--pos", r.value + "%");
   });
 
   /* ---------------- FAQ ---------------- */
