@@ -60,8 +60,8 @@ body.modal-open, body.menu-open { overflow: hidden; }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: 0; border-radius: 99px; padding: 18px 30px; font: 600 13px var(--sans); letter-spacing: .16em; text-transform: uppercase; transition: background .25s, color .25s, border-color .25s; text-align: center; }
 .btn-rose { background: var(--rose); color: var(--ink); }
 .btn-rose:hover { background: var(--ink); color: #fff; }
-.btn-plum { background: var(--ink); color: #fff; padding: 16px 28px; font-size: 12px; }
-.btn-plum:hover { background: var(--accent-hover); color: #fff; }
+.btn-plum { background: var(--accent-hover); color: #fff; padding: 16px 28px; font-size: 12px; }
+.btn-plum:hover { background: #86605c; color: #fff; }
 .btn-outline { color: var(--ink); border: 1px solid var(--ink); padding: 17px 30px; }
 .btn-outline:hover { background: var(--ink); color: #fff; }
 .btn-outline-light { color: #fff; border: 1px solid #fff; padding: 17px 30px; }

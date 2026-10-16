@@ -14,12 +14,12 @@ const rebase = (html: string) => html
 export const shellHeader = rebase(header).replace('class="site-header"', 'class="site-header is-solid"');
 export const shellFooter = rebase(footer);
 
-export const siteScripts = [withBase('/assets/js/translations.js?v=4'), withBase('/assets/js/site.js?v=4')];
+export const siteScripts = [withBase('/assets/js/translations.js?v=5'), withBase('/assets/js/site.js?v=4')];
 export const siteLinks = [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
   { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' as const },
   { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap' },
-  { rel: 'stylesheet', href: withBase('/assets/css/site.css?v=3') },
+  { rel: 'stylesheet', href: withBase('/assets/css/site.css?v=4') },
 ];
 
 export function useSiteController() {
