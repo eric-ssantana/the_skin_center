@@ -15,4 +15,5 @@
 - Technology detail pages are `/technology/$slug`, rendered from `src/data/technologies.ts`; keep the home carousel cards linking to the same slugs.
 - Keep Blog posts in the typed multilingual catalog (`src/data/blog.ts`) and render them through the listing and slug routes.
 - Never apply scroll-reveal hiding to cards inside the horizontally scrolling technology track, and keep the fallback that reveals anything still hidden while on screen.
-- Keep the hero video's pause button and respect prefers-reduced-motion for autoplaying or looping motion.
+- Keep the hero video's pause button and respect prefers-reduced-motion for autoplaying or looping motion (the pinned About scene shows its photos in place when motion is reduced).
+- Keep `overflow-x: clip` (not only `hidden`) on html and body: the About scene and side-sliding reveals otherwise widen the mobile layout and push the header buttons off screen.

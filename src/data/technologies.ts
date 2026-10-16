@@ -38,6 +38,118 @@ export const techLabels: Record<Language, { learn: string; back: string; about: 
 
 export const technologies: Technology[] = [
   {
+    "slug": "fotona",
+    "title": "SP Dynamis by Fotona",
+    "image": "/assets/images/tech/tech-fotona.jpg",
+    "copy": {
+      "en": {
+        "sub": "Dual-wavelength laser technology for face, body and skin renewal.",
+        "about": "SP Dynamis by Fotona is a dual-wavelength Er:YAG + Nd:YAG laser platform that powers a family of signature treatments, including Fotona 4D, HairLase, LipLase and SmoothEye. By combining a gentle ablative wavelength with a deep-penetrating one, it addresses skin quality, laxity, small veins and unwanted hair with precise, adjustable energy. Every plan begins with a personalized consultation to define which protocol best fits your anatomy, goals and desired downtime.",
+        "platformTitle": "",
+        "platform": [],
+        "benefits": [
+          {
+            "title": "Two wavelengths, one platform",
+            "text": "Er:YAG and Nd:YAG work together to treat the surface and deeper layers of the skin in a single session."
+          },
+          {
+            "title": "Skin rejuvenation & resurfacing",
+            "text": "Supports smoother texture, refined tone and a fresher look with a controlled, progressive approach."
+          },
+          {
+            "title": "Tightening & contour support",
+            "text": "Thermal energy stimulates collagen remodeling for firmer skin on face and neck."
+          },
+          {
+            "title": "Small veins and unwanted hair",
+            "text": "Nd:YAG treats superficial vessels and supports long-term hair reduction."
+          },
+          {
+            "title": "Customized, comfortable protocols",
+            "text": "Settings are tailored to your skin type and goals, with limited downtime depending on the protocol."
+          }
+        ],
+        "indications": [
+          "Skin texture, tone and fine lines",
+          "Small facial and leg veins",
+          "Skin laxity and contour refinement"
+        ],
+        "ctaTitle": "Is SP Dynamis right for you?",
+        "ctaText": "A consultation determines which Fotona protocol, if any, fits your anatomy and your goals."
+      },
+      "pt": {
+        "sub": "Tecnologia a laser de duplo comprimento de onda para rosto, corpo e renovação da pele.",
+        "about": "O SP Dynamis by Fotona é uma plataforma a laser de duplo comprimento de onda Er:YAG + Nd:YAG que sustenta uma família de tratamentos exclusivos, como Fotona 4D, HairLase, LipLase e SmoothEye. Ao combinar um comprimento de onda ablativo suave com outro de penetração profunda, trata a qualidade da pele, a flacidez, vasinhos e pelos indesejados com energia precisa e ajustável. Todo plano começa com uma consulta personalizada para definir qual protocolo melhor se adapta à sua anatomia, aos seus objetivos e ao tempo de recuperação desejado.",
+        "platformTitle": "",
+        "platform": [],
+        "benefits": [
+          {
+            "title": "Dois comprimentos de onda, uma plataforma",
+            "text": "Er:YAG e Nd:YAG atuam juntos para tratar a superfície e as camadas mais profundas da pele em uma única sessão."
+          },
+          {
+            "title": "Rejuvenescimento e resurfacing da pele",
+            "text": "Favorece textura mais lisa, tom mais uniforme e aspecto renovado, com abordagem controlada e progressiva."
+          },
+          {
+            "title": "Apoio ao tensionamento e ao contorno",
+            "text": "A energia térmica estimula a remodelação do colágeno para uma pele mais firme no rosto e no pescoço."
+          },
+          {
+            "title": "Vasinhos e pelos indesejados",
+            "text": "O Nd:YAG trata vasos superficiais e contribui para a redução duradoura dos pelos."
+          },
+          {
+            "title": "Protocolos personalizados e confortáveis",
+            "text": "Os parâmetros são adaptados ao seu tipo de pele e aos seus objetivos, com pouco tempo de recuperação, conforme o protocolo."
+          }
+        ],
+        "indications": [
+          "Textura, tom e linhas finas",
+          "Vasinhos no rosto e nas pernas",
+          "Flacidez e refinamento do contorno"
+        ],
+        "ctaTitle": "O SP Dynamis é indicado para você?",
+        "ctaText": "A consulta determina qual protocolo Fotona, se houver, se adapta à sua anatomia e aos seus objetivos."
+      },
+      "es": {
+        "sub": "Tecnología láser de doble longitud de onda para rostro, cuerpo y renovación de la piel.",
+        "about": "SP Dynamis by Fotona es una plataforma láser de doble longitud de onda Er:YAG + Nd:YAG que respalda una familia de tratamientos exclusivos, como Fotona 4D, HairLase, LipLase y SmoothEye. Al combinar una longitud de onda ablativa suave con otra de penetración profunda, trata la calidad de la piel, la flacidez, las venas pequeñas y el vello no deseado con energía precisa y ajustable. Cada plan comienza con una consulta personalizada para definir qué protocolo se adapta mejor a tu anatomía, tus objetivos y el tiempo de recuperación deseado.",
+        "platformTitle": "",
+        "platform": [],
+        "benefits": [
+          {
+            "title": "Dos longitudes de onda, una plataforma",
+            "text": "Er:YAG y Nd:YAG trabajan juntos para tratar la superficie y las capas más profundas de la piel en una sola sesión."
+          },
+          {
+            "title": "Rejuvenecimiento y renovación de la piel",
+            "text": "Favorece una textura más suave, un tono más uniforme y un aspecto renovado, con un enfoque controlado y progresivo."
+          },
+          {
+            "title": "Apoyo a la firmeza y al contorno",
+            "text": "La energía térmica estimula la remodelación del colágeno para una piel más firme en rostro y cuello."
+          },
+          {
+            "title": "Venas pequeñas y vello no deseado",
+            "text": "El Nd:YAG trata vasos superficiales y contribuye a la reducción duradera del vello."
+          },
+          {
+            "title": "Protocolos personalizados y cómodos",
+            "text": "Los parámetros se adaptan a tu tipo de piel y a tus objetivos, con poco tiempo de recuperación según el protocolo."
+          }
+        ],
+        "indications": [
+          "Textura, tono y líneas finas",
+          "Venas pequeñas en rostro y piernas",
+          "Flacidez y refinamiento del contorno"
+        ],
+        "ctaTitle": "¿Es SP Dynamis adecuado para ti?",
+        "ctaText": "La consulta determina qué protocolo Fotona, si lo hay, se adapta a tu anatomía y a tus objetivos."
+      }
+    }
+  },
+  {
     "slug": "igniterf",
     "title": "IgniteRF by InMode",
     "image": "/assets/images/tech/tech-igniterf-card.jpg",

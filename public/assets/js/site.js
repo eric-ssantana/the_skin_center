@@ -234,10 +234,36 @@
       el.__rv = true;
       var i = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
       el.style.transitionDelay = Math.min(i, 4) * 0.1 + "s";
+      // About text columns slide in from the sides.
+      if (el.parentElement && el.parentElement.classList.contains("about-cols")) el.classList.add(i === 0 ? "rv-left" : "rv-right");
       el.classList.add("rv");
       io.observe(el);
     });
   }
+
+  /* ---------------- About: pinned scene (big title + photos rising) ---------------- */
+  var aboutTick = 0;
+  function aboutScene() {
+    aboutTick = 0;
+    var pin = document.getElementById("aboutPin");
+    if (!pin) return;
+    var imgs = $$(".aimg", pin), big = document.getElementById("aboutBig");
+    if (reduce) { imgs.forEach(function (el) { el.style.transform = "none"; }); return; }
+    var clamp = function (v) { return Math.max(0, Math.min(1, v)); };
+    var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
+    var r = pin.getBoundingClientRect();
+    var p = clamp(-r.top / Math.max(1, r.height - window.innerHeight));
+    if (big) big.style.transform = "translateY(" + (-p * 4) + "vh)";
+    imgs.forEach(function (el) {
+      var n = Number(el.getAttribute("data-n"));
+      var start = 0.04 + (n === 2 ? 0 : 0.04);
+      var e = ease(clamp((p - start) / 0.4));
+      el.style.transform = "translateY(" + ((1 - e) * 110).toFixed(2) + "vh)";
+    });
+  }
+  var queueAbout = function () { if (!aboutTick) aboutTick = requestAnimationFrame(aboutScene); };
+  window.addEventListener("scroll", queueAbout, { passive: true });
+  window.addEventListener("resize", queueAbout);
 
   /* ---------------- Re-sync when markup is (re)created ---------------- */
   function refresh() {
@@ -245,6 +271,7 @@
     updateHeader();
     initVideo();
     scanReveal();
+    aboutScene();
     var saved = null;
     try { saved = sessionStorage.getItem("tsc_cat"); if (saved != null && $(".svc-tab")) sessionStorage.removeItem("tsc_cat"); } catch (e) {}
     if (saved != null && $(".svc-tab")) showCategory(Number(saved));
