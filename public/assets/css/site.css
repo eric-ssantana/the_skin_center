@@ -125,7 +125,7 @@ body.modal-open, body.menu-open { overflow: hidden; }
 .about { background: var(--bg); position: relative; overflow-x: clip; }
 .about-pin { height: 170vh; position: relative; }
 .about-stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
-.about-big { position: absolute; top: 9vh; left: 0; right: 0; text-align: center; font: 300 clamp(30px, 6.4vw, 116px)/1 var(--sans); color: var(--num); white-space: nowrap; z-index: 1; letter-spacing: .14em; padding-left: .14em; will-change: transform; }
+.about-big { position: absolute; top: 9vh; left: 0; right: 0; text-align: center; font: 300 clamp(30px, 6.4vw, 72px)/1 var(--sans); color: var(--num); white-space: nowrap; z-index: 1; letter-spacing: .14em; padding-left: .14em; will-change: transform; }
 .about-imgs { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
 .aimg { position: absolute; width: 30vw; overflow: hidden; will-change: transform; }
 .aimg img { width: 100%; height: 100%; object-fit: cover; display: block; }
